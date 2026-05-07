@@ -127,12 +127,10 @@
     color: white;
     padding: 10px 16px;
     border-radius: 10px;
-    border: none;
+    text-decoration: none;
     font-weight: 700;
-    font-family: Arial, sans-serif;
     box-shadow: 0 6px 18px rgba(139, 75, 87, 0.18);
     transition: 0.3s;
-    cursor: pointer;
 }
 
 .handlekurv-knapp:hover {

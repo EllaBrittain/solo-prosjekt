@@ -1,1 +1,96 @@
-/*  */
+/* Seksjon 1 - ordre */
+
+.checkout {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+}
+
+.strek {
+    width: 100%;
+    border: 0.8px solid #6b5a5751;
+    border-radius: 10px;
+    margin: 20px 0;
+}
+
+main h2 {
+    font-size: 20px;
+}
+
+.ordre-oppsumering,
+.ordre-betaling {
+    background-color: white;
+    padding: 25px;
+    border-radius: 20px;
+}
+
+.ordre-oppsumering {
+    width: 60%;
+}
+
+.velg-alle {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin: 30px 0;
+}
+
+.velg-alle h2 {
+    font-size: 18px;
+    color: #6b5a57;
+}
+
+.vare {
+    display: flex;
+    gap: 20px;
+}
+
+.prikk {
+    width: 20px;
+    height: 20px;
+    background-color: white;
+    border: solid 3.5px #b76e79;
+    border-radius: 50%;
+    transition: 0.2s;
+}
+
+.prikk:hover {
+    background-color: #b76e79;
+}
+
+.vare img {
+    width: 100px;
+    background-color: #f8f4f2;
+}
+
+.vare-info {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.volume {
+    font-style: italic;
+    color: #6b5a57;
+}
+
+.price {
+    color: #b76e79;
+    font-weight: 600;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+.ordre-betaling {
+    width: 40%;
+}
