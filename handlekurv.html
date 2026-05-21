@@ -8,6 +8,7 @@
 
     <link rel="stylesheet" href="generel.css">
     <link rel="stylesheet" href="handlekurv.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Fascinate+Inline&family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&family=Montserrat:ital@0;1&display=swap');
@@ -24,9 +25,8 @@
         </div>
         <nav>
             <div class="lenker">
-                <a href="#produkter">Produkter</a>
-                <a href="#looks">Looks</a>
-                <a href="#bestselgere">Bestselgere</a>
+                <a href="index.html#produkter">Produkter</a>
+                <a href="index.html#bestselgere">Bestselgere</a>
             </div>
             <a id="handlekurv" href="handlekurv.html">Gå til handlekurven</a>
         </nav>
@@ -42,43 +42,9 @@
                 <div class="velg-alle">
                     <div id="alle-prikk" class="prikk"></div>
                     <h2>Velg alle varer</h2>
-                </div>
-
-
-
-                <div class="vare">
-                    <div class="prikk"></div>
-
-                    <div class="img">
-                        <img src="bilder/countourwand.webp" alt="">
-                    </div>
-
-                    <div class="vare-info">
-                        <h4>HOLLYWOOD CONTOUR WAND</h4>
-                        <div class="volume">Fair-Medium</div>
-                        <div class="price">€40.00</div>
-                    </div>
-                </div>
-
-                <div class="strek"></div>
-
-                <div class="vare">
-                    <div class="prikk"></div>
-
-                    <div class="img">
-                        <img src="bilder/palette.webp" alt="">
-                    </div>
-
-                    <div class="vare-info">
-                        <h4>HOLLYWOOD INSTANT LOOK IN A PALETTE</h4>
-                        <div class="volume">Fair-Medium</div>
-                        <div class="price">€40.00</div>
-                    </div>
-
+                    <button id="tom-knapp" class="handlekurv-knapp"><i class="fa-solid fa-trash-can"></i></button>
                 </div>
             </div>
-            </div>
-
 
 
             <div class="ordre-betaling">hade</div>
@@ -97,6 +63,8 @@
 
         <div class="linje"></div>
     </footer>
+
+    <script src="script.js"></script>
 </body>
 
 </html>

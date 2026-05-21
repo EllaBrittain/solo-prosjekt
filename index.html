@@ -25,7 +25,6 @@
         <nav>
             <div class="lenker">
                 <a href="#produkter">Produkter</a>
-                <a href="#looks">Looks</a>
                 <a href="#bestselgere">Bestselgere</a>
             </div>
             <a id="handlekurv" href="handlekurv.html">Gå til handlekurven</a>
@@ -62,7 +61,10 @@
             <div class="bestselger-item">
                 <img src="bilder/GlowToner.png" alt="">
                 <div class="bestselger-handle">
-                    <button class="handlekurv-knapp">Legg til i handlekurven</button>
+                    <button class="handlekurv-knapp" data-navn="GLOW TONER" data-volume="Original 150 ml"
+                        data-pris="€49.00" data-bilde="bilder/GlowToner.png">
+                        Legg til i handlekurven
+                    </button>
                 </div>
             </div>
             <div class="bestselger-item">
@@ -75,10 +77,14 @@
             <div class="bestselger-item">
                 <img src="bilder/setingspray.webp" alt="">
                 <div class="bestselger-handle">
-                    <button class="handlekurv-knapp">Legg til i handlekurven</button>
+                    <button class="handlekurv-knapp" data-navn="AIRBRUSH FLAWLESS SETTING SPRAY"
+                        data-volume="Original 100 ml" data-pris="€38.00" data-bilde="bilder/setingspray.webp">
+                        Legg til i handlekurven
+                    </button>
                 </div>
             </div>
         </section>
+
 
         <section id="produkter" class="scrollbar">
             <div class="scroll-item">
@@ -88,80 +94,146 @@
                     <div class="volume">Fair-Medium</div>
                     <div class="price">€40.00</div>
                 </div>
+                <div class="item-handle">
+                    <button class="handlekurv-knapp" data-navn="HOLLYWOOD CONTOUR WAND" data-volume="Fair-Medium"
+                        data-pris="€40.00" data-bilde="bilder/countourwand.webp">
+                        Legg til i handlekurven
+                    </button>
+                </div>
             </div>
-            <div class="scroll-item"><a href="#lenke2"><img src="bilder/palette.webp" alt="produkt6"></a>
+
+            <div class="scroll-item">
+                <a href="#lenke2"><img src="bilder/palette.webp" alt="produkt6"></a>
                 <div class="info">
                     <div class="title">HOLLYWOOD INSTANT LOOK IN A PALETTE</div>
-                    <<div class="vare">
-                    <div class="prikk"></div>
-
-
-                    <div class="img">
-                        <img src="bilder/countourwand.webp" alt="">
-                    </div>
-                    <div class="vare-info">
-                        <h4>HOLLYWOOD CONTOUR WAND</h4>
-                        <div class="volume">Fair-Medium</div>
-                        <div class="price">€40.00</div>
-                    </div>
+                    <div class="volume">Pink Glow</div>
+                    <div class="price">€45.00</div>
                 </div>
+                <div class="item-handle">
+                    <button class="handlekurv-knapp" data-navn="HOLLYWOOD INSTANT LOOK IN A PALETTE"
+                        data-volume="Pink Glow" data-pris="€45.00" data-bilde="bilder/palette.webp">
+                        Legg til i handlekurven
+                    </button>
                 </div>
             </div>
-            <div class="scroll-item"><a href="#lenke3"><img src="bilder/FOUNDATION.webp" alt="produkt3"></a>
+
+            <div class="scroll-item">
+                <a href="#lenke3"><img src="bilder/FOUNDATION.webp" alt="produkt3"></a>
                 <div class="info">
                     <div class="title">AIRBRUSH FLAWLESS FOUNDATION</div>
                     <div class="volume">9 Cool</div>
                     <div class="price">€52.00</div>
                 </div>
+                <div class="item-handle">
+                    <button class="handlekurv-knapp" data-navn="AIRBRUSH FLAWLESS FOUNDATION" data-volume="9 Cool"
+                        data-pris="€52.00" data-bilde="bilder/FOUNDATION.webp">
+                        Legg til i handlekurven
+                    </button>
+                </div>
             </div>
-            <div class="scroll-item"><a href="#lenke4"><img src="bilder/settingsprayy.webp" alt="produkt4"></a>
+
+            <div class="scroll-item">
+                <a href="#lenke4"><img src="bilder/settingsprayy.webp" alt="produkt4"></a>
                 <div class="info">
                     <div class="title">AIRBRUSH FLAWLESS SETTING SPRAY</div>
                     <div class="volume">Original 100 ml</div>
                     <div class="price">€38.00</div>
                 </div>
+                <div class="item-handle">
+                    <button class="handlekurv-knapp" data-navn="AIRBRUSH FLAWLESS SETTING SPRAY"
+                        data-volume="Original 100 ml" data-pris="€38.00" data-bilde="bilder/settingsprayy.webp">
+                        Legg til i handlekurven
+                    </button>
+                </div>
             </div>
-            <div class="scroll-item"><a href="#lenke5"><img src="bilder/lipkip.webp" alt="produkt5"></a>
+
+            <div class="scroll-item">
+                <a href="#lenke5"><img src="bilder/lipkip.webp" alt="produkt5"></a>
                 <div class="info">
                     <div class="title">PILLOW TALK LIP KIT</div>
                     <div class="volume">Makeup Kit</div>
                     <div class="price">€58.00</div>
                 </div>
+                <div class="item-handle">
+                    <button class="handlekurv-knapp" data-navn="PILLOW TALK LIP KIT" data-volume="Makeup Kit"
+                        data-pris="€58.00" data-bilde="bilder/lipkip.webp">
+                        Legg til i handlekurven
+                    </button>
+                </div>
             </div>
-            <div class="scroll-item"><a href="#lenke6"><img src="bilder/FILMSTAR-BRONZE.webp" alt="produkt8"></a>
+
+            <div class="scroll-item">
+                <a href="#lenke6"><img src="bilder/FILMSTAR-BRONZE.webp" alt="produkt8"></a>
                 <div class="info">
                     <div class="title">FILMSTAR BRONZE & GLOW</div>
                     <div class="volume">LIGHT TO MEDIUM</div>
                     <div class="price">€69.00</div>
                 </div>
+                <div class="item-handle">
+                    <button class="handlekurv-knapp" data-navn="FILMSTAR BRONZE & GLOW" data-volume="LIGHT TO MEDIUM"
+                        data-pris="€69.00" data-bilde="bilder/FILMSTAR-BRONZE.webp">
+                        Legg til i handlekurven
+                    </button>
+                </div>
             </div>
-            <div class="scroll-item"><a href="#lenke7"><img src="bilder/PLUMPGASM.webp" alt="produkt7"></a>
+
+            <div class="scroll-item">
+                <a href="#lenke7"><img src="bilder/PLUMPGASM.webp" alt="produkt7"></a>
                 <div class="info">
                     <div class="title">BIG LIP PLUMPGASM</div>
                     <div class="volume">Strawberry Chocolatte</div>
                     <div class="price">€37.00</div>
                 </div>
+                <div class="item-handle">
+                    <button class="handlekurv-knapp" data-navn="BIG LIP PLUMPGASM" data-volume="Strawberry Chocolatte"
+                        data-pris="€37.00" data-bilde="bilder/PLUMPGASM.webp">
+                        Legg til i handlekurven
+                    </button>
+                </div>
             </div>
-            <div class="scroll-item"><a href="#lenke8"><img src="bilder/CollagenOil-8ml-Packshot.webp"
-                        alt="produkt10"></a>
+
+            <div class="scroll-item">
+                <a href="#lenke8"><img src="bilder/CollagenOil-8ml-Packshot.webp" alt="produkt10"></a>
                 <div class="info">
                     <div class="title">COLLAGEN SUPERFUSION FACIAL OIL</div>
                     <div class="volume">8 ml</div>
                     <div class="price">€33.00</div>
                 </div>
+                <div class="item-handle">
+                    <button class="handlekurv-knapp" data-navn="COLLAGEN SUPERFUSION FACIAL OIL" data-volume="8 ml"
+                        data-pris="€33.00" data-bilde="bilder/CollagenOil-8ml-Packshot.webp">
+                        Legg til i handlekurven
+                    </button>
+                </div>
             </div>
-            <div class="scroll-item"><a href="#lenke9"><img src="bilder/THE_FELINE_FLICK_KIT.webp" alt="produkt9"></a>
+
+            <div class="scroll-item">
+                <a href="#lenke9"><img src="bilder/THE_FELINE_FLICK_KIT.webp" alt="produkt9"></a>
                 <div class="info">
                     <div class="title">THE FELINE FLICK KIT</div>
                     <div class="volume">EYE KIT</div>
                     <div class="price">€56.00</div>
                 </div>
+                <div class="item-handle">
+                    <button class="handlekurv-knapp" data-navn="THE FELINE FLICK KIT" data-volume="EYE KIT"
+                        data-pris="€56.00" data-bilde="bilder/THE_FELINE_FLICK_KIT.webp">
+                        Legg til i handlekurven
+                    </button>
+                </div>
             </div>
-            <div class="scroll-item"><a href="#lenke10"><img src="bilder/GLOW_TONER_150ML.webp" alt="produkt1"></a>
+
+            <div class="scroll-item">
+                <a href="#lenke10"><img src="bilder/GLOW_TONER_150ML.webp" alt="produkt1"></a>
                 <div class="info">
                     <div class="title">GLOW TONER</div>
                     <div class="volume">Original 150 ml</div>
                     <div class="price">€49.00</div>
+                </div>
+                <div class="item-handle">
+                    <button class="handlekurv-knapp" data-navn="GLOW TONER" data-volume="Original 150 ml"
+                        data-pris="€49.00" data-bilde="bilder/GLOW_TONER_150ML.webp">
+                        Legg til i handlekurven
+                    </button>
                 </div>
             </div>
         </section>
@@ -176,19 +248,6 @@
 
         <div class="linje"></div>
 
-
-
-        <div class="footer-container footer-email">
-            <div class="footer-column s1">
-                <p>SIGN UP TO RECEIVE EMAILS</p>
-                <p>Be the first to know about products, offers and tips!</p>
-                <div class="email-center">
-                    <input type="email" placeholder="email">
-                    <button>Sign up</button>
-                </div>
-            </div>
-        </div>
-
         <div class="footer-bottom">
             <p>Vividé "Glow in your own colors –
                 lek med nyanser, uttrykk hvem du er og la din unike glød skinne!" – Ella Brittain, Grunnlegger & Kreativ
@@ -198,6 +257,8 @@
 
         <div class="linje"></div>
     </footer>
+
+    <script src="script.js"></script>
 </body>
 
 </html>

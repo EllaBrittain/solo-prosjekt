@@ -79,18 +79,20 @@ main h2 {
     font-weight: 600;
 }
 
+#tom-knapp {
+    display: block;
+    margin-left: auto;
+    font-size: 30px;
+    color: #b76e79;
+    border: none;
+    background-color: white;
+}
 
 
 
-
-
-
-
-
-
-
-
-
+/* Seksjon 2 - Betaling */
 .ordre-betaling {
     width: 40%;
 }
+
+
