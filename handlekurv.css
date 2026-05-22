@@ -52,7 +52,13 @@ main h2 {
     border: solid 3.5px #b76e79;
     border-radius: 50%;
     transition: 0.2s;
+    cursor: pointer;
 }
+
+.valgt{
+    background-color: #b76e79;
+}
+
 
 .prikk:hover {
     background-color: #b76e79;
@@ -86,6 +92,12 @@ main h2 {
     color: #b76e79;
     border: none;
     background-color: white;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+#tom-knapp:hover{
+    color: #b76e79a9;
 }
 
 
@@ -93,6 +105,33 @@ main h2 {
 /* Seksjon 2 - Betaling */
 .ordre-betaling {
     width: 40%;
+    max-height: 450px;
+}
+
+.style {
+    color: #6b5a57;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+.flex{
+    display: flex;
+    margin-bottom: 20px;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.flex img {
+    width: 30%;
+}
+
+.ordre-betaling button {
+   border: none;
+   width: 100%;
+   margin-bottom: 30px;
+   font-size: 15px;
+   letter-spacing: 5px;
+   cursor: pointer;
 }
 
 
