@@ -10,6 +10,7 @@ document.addEventListener("DOMContentLoaded", () => {
         tottalSum.innerHTML = "€" + frakt.toFixed(2)
     }
 
+
     function oppdaterAntall() {
         const valgte = document.querySelectorAll(".vare .prikk.valgt")
         tottalAntallVarer.innerHTML = valgte.length
@@ -22,6 +23,24 @@ document.addEventListener("DOMContentLoaded", () => {
         tottalSum.innerHTML = "€" + (sum + frakt).toFixed(2)
     }
 
+
+    function knappeBlink() {
+        document.querySelectorAll(".handlekurv-knapp").forEach(knapp => {
+            knapp.classList.add("stor")
+        })
+        document.getElementById("handlekurv").classList.add("stor")
+
+        setTimeout(function () {
+            document.querySelectorAll(".handlekurv-knapp").forEach(knapp => {
+                knapp.classList.remove("stor")
+            })
+            document.getElementById("handlekurv").classList.remove("stor")
+
+        }, 300)
+    }
+
+
+
     document.querySelectorAll(".handlekurv-knapp").forEach(knapp => {
         knapp.addEventListener("click", () => {
             const produkt = {
@@ -32,6 +51,7 @@ document.addEventListener("DOMContentLoaded", () => {
             }
             const handlekurv = JSON.parse(localStorage.getItem("handlekurv") || "[]")
             handlekurv.push(produkt)
+            knappeBlink()
             localStorage.setItem("handlekurv", JSON.stringify(handlekurv))
         })
     })

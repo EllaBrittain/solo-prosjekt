@@ -92,9 +92,22 @@ nav a:hover {
     transition: 0.3s;
 }
 
+.stor{
+    scale: 1.2;
+}
+
 #handlekurv:hover {
     transform: scale(1.08);
     color: #b76e79;
+}
+
+.handlekurv-ikon {
+    display: none;
+    font-size: 20px;
+}
+
+#noshow{
+    display: none;
 }
 
 main {
@@ -154,4 +167,14 @@ footer p {
 
 .footer-bottom>p {
     margin-bottom: 10px;
+}
+
+
+@media (width < 950px) {
+    .handlekurv-tekst {
+        display: none;
+    }
+    #noshow {
+        display: inline;
+    }
 }

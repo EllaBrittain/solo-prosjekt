@@ -1,3 +1,7 @@
+#noshow {
+    display: none;
+}
+
 /* Seksjon 1 - ordre */
 
 .checkout {
@@ -48,6 +52,7 @@ main h2 {
 .prikk {
     width: 20px;
     height: 20px;
+    flex-shrink: 0;
     background-color: white;
     border: solid 3.5px #b76e79;
     border-radius: 50%;
@@ -55,7 +60,7 @@ main h2 {
     cursor: pointer;
 }
 
-.valgt{
+.valgt {
     background-color: #b76e79;
 }
 
@@ -96,7 +101,7 @@ main h2 {
     cursor: pointer;
 }
 
-#tom-knapp:hover{
+#tom-knapp:hover {
     color: #b76e79a9;
 }
 
@@ -105,7 +110,9 @@ main h2 {
 /* Seksjon 2 - Betaling */
 .ordre-betaling {
     width: 40%;
-    max-height: 450px;
+    height: fit-content;
+    position: sticky;
+    top: 100px;
 }
 
 .style {
@@ -114,24 +121,63 @@ main h2 {
     margin-bottom: 20px;
 }
 
-.flex{
+.flex {
     display: flex;
     margin-bottom: 20px;
     align-items: center;
     justify-content: space-between;
+    flex-wrap: wrap;
 }
 
 .flex img {
-    width: 30%;
+    max-width: 120px;
 }
 
 .ordre-betaling button {
-   border: none;
-   width: 100%;
-   margin-bottom: 30px;
-   font-size: 15px;
-   letter-spacing: 5px;
-   cursor: pointer;
+    border: none;
+    width: 100%;
+    margin-bottom: 30px;
+    font-size: 15px;
+    letter-spacing: 5px;
+    cursor: pointer;
+}
+
+#handlekurv-knapp {
+    background: linear-gradient(90deg, #b76e79, #8a4b57);
+    color: white;
+    padding: 10px 16px;
+    border-radius: 10px;
+    text-decoration: none;
+    font-weight: 700;
+    box-shadow: 0 6px 18px rgba(139, 75, 87, 0.18);
+    transition: 0.3s;
 }
 
 
+
+@media(width < 950px) {
+    .checkout {
+        flex-direction: column;
+    }
+
+    .ordre-oppsumering,
+    .ordre-betaling {
+        width: 100%;
+    }
+
+    .flex img {
+        width: 100px;
+    }
+
+    .handlekurv-tekst {
+        display: none;
+    }
+
+    #noshow {
+        display: inline;
+    }
+
+    .lenker {
+        display: none;
+    }
+}
